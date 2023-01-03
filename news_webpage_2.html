@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="news_web_2.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="https://news-homepagemain.netlify.app/assets/images/logo.svg" height="30px" style="margin-top: 11px;" width="50px" alt="logo">
+        </div>
+        <nav class="desk-nav" > 
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">New</a></li>
+                <li><a href="#">Popular</a></li>
+                <li><a href="#">Trending</a></li>
+                <li><a href="#">Categories</a></li>
+            </ul>
+        </nav>
+        <button class="menu">
+            <div class="bar"></div>
+        </button>
+    </header>
+    <nav class="mobile-nav">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">New</a></li>
+            <li><a href="#">Popular</a></li>
+            <li><a href="#">Trending</a></li>
+            <li><a href="#">Categories</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <img src="https://news-homepagemain.netlify.app/assets/images/image-web-3-desktop.jpg" width="705px"  height="256px" alt="block-image">
+        </section>
+        <article><h1>The Bright Future of Web 3.0?</h1></article>
+        <article class="article2" ><p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. But is it really fulfilling its promise?</p>
+        <button>Read More</button>
+        </article>
+        <aside>
+            <h2>News</h2>
+            <div class="content">
+                <h3>Hydrogen VS Electric Cars</h3>
+                <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+                <hr>
+                <h3>The Downsides of AI Artistry</h3>
+                <p>What are the possible adverse effects of on-demand AI image generation?</p>
+                <hr>
+                <h3>Is VC Funding Drying Up?</h3>
+                <p>Private funding by VS firms is down 50% YOY. We take a look at what that means.</p>
+            </div>
+        </aside>
+    </main>
+    <section>
+        <div class="box">
+            <h3>01</h3>
+            <a href="#">Reviving Retro PCs</a>
+            <img src="img1.jpg" height="132px" width="100px" alt="">
+            <p style="margin-top: -17px;"  >What happens when old PCs are given modern upgrades?</p>
+        </div>
+        <div class="box">
+            <h3>02</h3>
+            <a href="#">Top 10 Laptops of 2022</a>
+            <img src="img2.jpeg" height="132px" width="100px" alt="">
+            <p>Out best picks for various needs and budgets. </p>
+        </div>
+        <div class="box">
+            <h3>03</h3>
+            <a href="#">The Growth of Gaming</a>
+            <img src="img3.jpeg" height="132px" width="100px" alt="">
+            <p>How the pandemic has sparked fresh opportunities.</p>
+        </div>
+    </section>
+</body>
+<script>
+    const menu_btn=document.querySelector('.menu');
+    const mobile_menu=document.querySelector('.mobile-nav');
+    menu_btn.addEventListener('click', function(){
+        menu_btn.classList.toggle('is-active'); 
+        mobile_menu.classList.toggle('is-active');
+    }  )
+</script>
+</html>
